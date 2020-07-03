@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&family=Montserrat:wght@400;800&display=swap" rel="stylesheet"> 
 
+    <title>Calculator</title>
+    <script src="math.min.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="top-header">
+            <h1 class="header-title">Calculator</h1>
+            <p class="about">A project to practice JavaScript skills</p>
+            <a class="about link" href="https://github.com/estelajimero">by Estela</a>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="calculator-container">
+            <div class="screen-container">
+                <div class="screen">
+                    <p class="previous-screen"></p>
+                    <h5 class="screen-numbers">0</h5>
+                </div>
+            </div>
+            <div class="button-grid">
+                <div class="btn-operator btn-calculator clear-btn">C</div>
+                <div data-key="backspace" class="btn-operator btn-calculator delete-btn">Del</div>
+                <div data-key="%" class="btn-operator btn-calculator percentage-btn">%</div>
+                <div data-key="/" class="btn-operator btn-calculator divide-btn">/</div>
+                <div data-key="7" class="btn-integer btn-calculator" id="btn-seven">7</div>
+                <div data-key="8" class="btn-integer btn-calculator" id="btn-eight">8</div>
+                <div data-key="9" class="btn-integer btn-calculator" id="btn-nine">9</div>
+                <div data-key="*" class="btn-operator btn-calculator multiply-btn">*</div>
+                <div data-key="4" class="btn-integer btn-calculator" id="btn-four">4</div>
+                <div data-key="5" class="btn-integer btn-calculator" id="btn-five">5</div>
+                <div data-key="6" class="btn-integer btn-calculator" id="btn-six">6</div>
+                <div data-key="+" class="btn-operator btn-calculator add-btn">+</div>
+                <div data-key="1" class="btn-integer btn-calculator" id="btn-one">1</div>
+                <div data-key="2" class="btn-integer btn-calculator" id="btn-two">2</div>
+                <div data-key="3" class="btn-integer btn-calculator" id="btn-three">3</div>
+                <div data-key="-" class="btn-operator btn-calculator subtract-btn">-</div>
+                <div data-key="0" class="btn-integer btn-calculator" id="btn-zero">0</div>
+                <div data-key="." class="btn-integer btn-calculator" id="decimal-btn">.</div>
+                <div data-key="=" class="btn-equal btn-calculator">=</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>

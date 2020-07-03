@@ -1,1 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+:root {
+    --main-font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+/****HEADER****/
+
+.top-header {
+    margin: 30px;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    line-height: 2em;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/****MAIN****/
+
+.main-container {
+    margin-top: 35px;
+}
+
+/***CALCULATOR CONTAINER***/
+
+.calculator-container {
+    background-color: white;
+    width: 350px;
+    max-height: 100%;
+    margin: auto;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(118,118,118,0.6); 
+    box-shadow: 1px 1px 5px 0px rgba(118,118,118,0.6);
+    border-radius: 10px;
+    font-family: var(--main-font-family);
+}
+
+.screen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    height: 110px;
+    width: 77%;
+    background: #ebebeb;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.screen-numbers {
+    font-size: 2em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.previous-screen {
+    font-size: 1em;
+    color: #6b6b6b;
+    align-self: flex-start;
+    position: absolute;
+    margin-top: 15px;
+}
+
+/***BUTTON WRAPPER***/
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 20px 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-calculator {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.btn-operator {
+    background: #9fe1f5;
+}
+
+.btn-operator:active {
+    background: #71a1b0;
+}
+
+.btn-integer {
+    background: #ebebeb
+}
+
+.btn-integer:active {
+    background: #aba9a9;
+}
+
+.btn-equal {
+    background: #2d93b3;
+    grid-column: span 2;
+    color: white;
+}
+
+.btn-equal:active {
+    background: #175366;
+}
